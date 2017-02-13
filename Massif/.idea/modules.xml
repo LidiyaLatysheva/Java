@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Massive.iml" filepath="$PROJECT_DIR$/Massive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Massif.iml" filepath="$PROJECT_DIR$/Massif.iml" />
     </modules>
   </component>
 </project>
