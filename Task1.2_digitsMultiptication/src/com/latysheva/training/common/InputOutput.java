@@ -8,24 +8,19 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.*;
 
-import org.apache.commons.io.FileUtils;
-import org.apache.commons.io.LineIterator;
-
-import com.latysheva.training.multiplication.MathActionOnNumber;
-
 
 public class InputOutput {
 
     public double inputDoubleValue() {
         System.out.println("Reading integer from console...");
         Scanner scanner = new Scanner(System.in);
-        double dValue = 0;
+        double value = 0;
         boolean flag = true;
         do {
             System.out.print("Enter double number: ");
             if (scanner.hasNextDouble()) {
-                dValue = scanner.nextDouble();
-                if (dValue < 0) {
+                value = scanner.nextDouble();
+                if (value < 0) {
                     System.out.println("Invalid input. Value should be positive. Try again.");
                 } else {
                     flag = false;
@@ -35,23 +30,23 @@ public class InputOutput {
                 scanner.next();
             }
         } while (flag);
-        return (dValue);
+        return (value);
     }
 
     public int inputIntegerValue() {
         System.out.println("Reading integer from console...");
         Scanner scanner = new Scanner(System.in);
-        int Value = 0;
+        int value = 0;
         boolean flag = true;
         do {
             System.out.print("Enter a four-digit integer number: ");
 
             if (scanner.hasNextInt()) {
-                Value = abs(scanner.nextInt());
-                if ((Value >= 1000) && (Value < 10000)) {
+                value = abs(scanner.nextInt());
+                if ((value >= 1000) && (value < 10000)) {
                     flag = false;
                 } else {
-                    System.out.println("Invalid input. Value should be a four-digit integer number. Try again.");
+                    System.out.println("Invalid input. value should be a four-digit integer number. Try again.");
                 }
             } else {
                 scanner.next();
@@ -59,7 +54,7 @@ public class InputOutput {
             }
         } while (flag);
 
-        return (Value);
+        return (value);
     }
 
     public ArrayList readIntFromFile(File file) {

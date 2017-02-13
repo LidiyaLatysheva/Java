@@ -19,8 +19,8 @@ public class Main {
 
         File fileToRead = new File(FILEPATH);
         File fileToWrite = new File(RECORDFILEPATH);
-        ArrayList value = new ArrayList();
-        ArrayList calculatedvalue = new ArrayList();
+        ArrayList value;
+        ArrayList calculatedvalue;
         MathActionOnNumber mult = new MathActionOnNumber();
 
         value = inputOutput.readIntFromFile(fileToRead);

@@ -2,9 +2,7 @@ package com.latysheva.training.figure;
 
 import static java.lang.Math.PI;
 
-/**
- * Created by Lidziya_Latyshava on 2/7/2017.
- */
+
 public class Square {
 
     private double calculateCircleSquare (double radius){

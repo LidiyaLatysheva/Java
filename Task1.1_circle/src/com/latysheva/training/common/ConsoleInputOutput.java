@@ -1,24 +1,23 @@
 package com.latysheva.training.common;
 
+
 import com.latysheva.training.figure.Circle;
-import static java.lang.Math.abs;
 
 import java.util.Scanner;
 
-/**
- * Created by Lidziya_Latyshava on 2/7/2017.
- */
+import static java.lang.Math.abs;
+
 public class ConsoleInputOutput {
     public double inputDoubleValue (){
         Scanner scanner = new Scanner(System.in);
-        double dValue = 0;
+        double value = 0;
         boolean flag = true;
 
         do {
             System.out.print("Enter double number: ");
             if (scanner.hasNextDouble()) {
-                dValue = scanner.nextDouble();
-                if (dValue < 0){
+                value = scanner.nextDouble();
+                if (value < 0){
                     System.out.println("Invalid input. Value should be positive. Try again.");
                 }
                 else {
@@ -32,20 +31,20 @@ public class ConsoleInputOutput {
             }
         } while (flag);
 
-        return (dValue);
+        return (value);
     }
 
     public int inputIntegerValue(){
         Scanner scanner = new Scanner(System.in);
-        int iValue = 0;
+        int value = 0;
         boolean flag = true;
 
         do {
             System.out.print("Enter a four-digit integer number: ");
 
             if (scanner.hasNextInt()) {
-                iValue = abs(scanner.nextInt());
-                if ((iValue >= 1000) && (iValue < 10000)) {
+                value = abs(scanner.nextInt());
+                if ((value >= 1000) && (value < 10000)) {
                     flag = false;
                 }
                 else{
@@ -58,7 +57,7 @@ public class ConsoleInputOutput {
             }
         } while (flag);
 
-        return (iValue);
+        return (value);
     }
 
     public void printRadiusValue (Circle circle){
