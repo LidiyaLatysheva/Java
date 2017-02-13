@@ -10,9 +10,11 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        ConsoleInputOutput cOutPut = new ConsoleInputOutput();
-        Circle cParam = new Circle();
-        cOutPut.printRadiusValue(cParam);
+        ConsoleInputOutput inputOutput = new ConsoleInputOutput();
+
+        Double radius = inputOutput.inputDoubleValue();
+        Circle cParam = new Circle(radius);
+        inputOutput.printRadiusValue(cParam);
         Perimeter prmtr = new Perimeter();
         prmtr.printCirclePerimeter(cParam);
         Square sqr = new Square();

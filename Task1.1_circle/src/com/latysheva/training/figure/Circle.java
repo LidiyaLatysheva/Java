@@ -7,10 +7,8 @@ import com.latysheva.training.common.ConsoleInputOutput;
 public class Circle {
     private double radius; // figure radius
 
-    public Circle() {
-        System.out.print("Radius value is not set. ");
-        ConsoleInputOutput consoleInput = new ConsoleInputOutput();
-        setRadius(consoleInput.inputDoubleValue());
+    public Circle(Double radius) {
+        setRadius(radius);
     }
 
     public double getRadius() {
