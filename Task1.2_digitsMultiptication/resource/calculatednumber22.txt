@@ -1,0 +1,3 @@
+Entered value is 1234. Calculated value is 24. 
+ Entered value is 4321. Calculated value is 24. 
+ 
