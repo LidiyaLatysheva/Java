@@ -9,8 +9,8 @@ import java.util.ArrayList;
 
 
 public class Main {
-    private static final String FILEPATH = "D:\\JavaFundamentalsTraining\\Task1.2_digitsMultiptication\\resource\\number.txt";
-    private static final String RECORDFILEPATH = "D:\\JavaFundamentalsTraining\\Task1.2_digitsMultiptication\\resource\\calculatednumber.txt";
+    private static final String FILEPATH = "resource\\number.txt";
+    private static final String RECORDFILEPATH = "resource\\calculatednumber.txt";
 
 
     public static void main(String[] args) {

@@ -67,10 +67,9 @@ public class InputOutput {
             while (scanner.hasNextInt()) {
                 if (scanner.hasNextInt()) {
                     tmpValue = abs(scanner.nextInt());
-                    if ((tmpValue >= 1000) && (tmpValue < 10000)) {
+                    Validator validator = new Validator();
+                    if (validator.is4digitInteger(tmpValue)) {
                         value.add(tmpValue);
-                    } else {
-                        scanner.next();
                     }
                 } else {
                     scanner.next();

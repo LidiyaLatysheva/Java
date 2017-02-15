@@ -19,6 +19,5 @@ public class Main {
         prmtr.printCirclePerimeter(cParam);
         Square sqr = new Square();
         sqr.printCircleSquare(cParam);
-
     }
 }

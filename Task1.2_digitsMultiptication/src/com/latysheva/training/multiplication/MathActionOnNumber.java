@@ -16,11 +16,11 @@ public class MathActionOnNumber {
         return multValue;
     }
 
-    public ArrayList multiplication4DigitsOfIntegerArrayList(ArrayList values){
+    public ArrayList multiplication4DigitsOfIntegerArrayList(ArrayList<Integer> values){
         ArrayList calculatedValues = new ArrayList();
         int size = values.size();
         for (int i = 0; i < size; i++) {
-            int digit = (Integer) values.get(i);
+            int digit = values.get(i);
             calculatedValues.add(multiplication4DigitsOfInteger(digit));
         }
         return calculatedValues;
