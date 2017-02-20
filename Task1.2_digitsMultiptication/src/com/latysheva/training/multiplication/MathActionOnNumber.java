@@ -4,7 +4,7 @@ package com.latysheva.training.multiplication;
 import java.util.ArrayList;
 
 public class MathActionOnNumber {
-    private int multiplication4DigitsOfInteger(int number) {
+    public int multiplication4DigitsOfInteger(int number) {
         int multValue = 1;
         while (number >= 10) {
             int i = number % 10;

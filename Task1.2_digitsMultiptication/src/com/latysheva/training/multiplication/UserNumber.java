@@ -1,10 +1,10 @@
 package com.latysheva.training.multiplication;
 
 
-public class Number {
+public class UserNumber {
     private int number;
 
-    public Number(int i) {
+    public UserNumber(int i) {
         setNumber(i);
     }
 
